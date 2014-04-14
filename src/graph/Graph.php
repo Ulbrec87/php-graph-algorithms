@@ -4,7 +4,7 @@ namespace graph;
 
 /**
  * @author Ulbrec
- * Graph (Graph)
+ * Graph Structure (Graph)
  */
 class Graph {
 
@@ -28,12 +28,16 @@ class Graph {
     $this->nodes[] = $node;
   }
 
+  /**
+   *
+   * Return all nodes
+   */
   public function getNodes() {
     return $this->nodes;
   }
 
   /**
-   * Ritorna il massimo id contenuto nel grafo
+   * Return max ID
    * @return integer
    */
   protected function getLastId() {

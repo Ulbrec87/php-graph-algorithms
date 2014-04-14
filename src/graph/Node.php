@@ -4,7 +4,7 @@ namespace graph;
 
 /**
  * @author Ulbrec
- * Node (Graph)
+ * Node Structure (Graph)
  */
 class Node {
 
@@ -50,6 +50,11 @@ class Node {
     $this->id = $id;
   }
 
+  /**
+   * Associate a node with another node
+   * @param \graph\Node $node
+   * @return boolean
+   */
   public function adjacentTo(Node $node) {
     if (!$this->graphId) {
       return false;
